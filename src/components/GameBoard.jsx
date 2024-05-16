@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const GameBoard = () => {
+const GameBoard = ({ handleSquareClick, activePlayerSymbol}) => {
   const initialGameBoard = [
     [null, null, null],
     [null, null, null],
@@ -12,10 +12,11 @@ const GameBoard = () => {
     console.log(rowIndex,colIndex)
     setGameBoard((prevGameBoard) => {
       const updatedBoard = [...prevGameBoard.map(innerArray=>[...innerArray])];
-      updatedBoard[rowIndex][colIndex]='X';
+      updatedBoard[rowIndex][colIndex]=activePlayerSymbol;
       console.log(updatedBoard)
       return updatedBoard;
     });
+    handleSquareClick();
   }
 
   return (
