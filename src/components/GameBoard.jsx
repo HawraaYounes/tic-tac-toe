@@ -30,7 +30,7 @@ const GameBoard = ({ handleSquareClick, turns }) => {
           <ol>
             {row.map((playerSymbol, colIndex) => (
               <li key={colIndex}>
-                <button onClick={() => handleSquareClick(rowIndex, colIndex)}>
+                <button onClick={() => handleSquareClick(rowIndex, colIndex)} disabled={ playerSymbol !== null}>
                   {playerSymbol}
                 </button>
               </li>
