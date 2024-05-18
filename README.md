@@ -11,7 +11,7 @@ This project is a Tic Tac Toe game built using ReactJS and Vite. It aims to show
   - **JSX**: Using JSX syntax to structure the components.
   - **Props**: Passing data between components via props.
   - **State**: Managing component state to handle game logic and interactions.
-- **Deployed Version**: The project is deployed and accessible online. [Click here to view the deployed version](tic-tac-l7cwvwhgf-hawraa-younes-projects.vercel.app).
+- **Deployed Version**: The project is deployed and accessible online. [Click here to view the deployed version](https://tic-tac-l7cwvwhgf-hawraa-younes-projects.vercel.app/).
 
 ## Technologies Used
 
